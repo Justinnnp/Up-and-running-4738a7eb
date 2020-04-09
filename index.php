@@ -9,11 +9,10 @@
   <?php
     $server = "127.0.0.1";
     $username = "root";
-    $password ="";
+    $password = "";
     $db = "netland";
 
     try {
-
         $handle = new PDO("mysql:host=$server;dbname=$db", "$username", "$password");
         $handle->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         echo "connected";
