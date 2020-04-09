@@ -12,13 +12,13 @@
     $password = "";
     $db = "netland";
 
-    try {
+try {
         $handle = new PDO("mysql:host=$server;dbname=$db", "$username", "$password");
         $handle->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         echo "connected";
-    } catch (PDOException $e) {
+    }catch (PDOException $e){
         die("Oops.. Something went wrong");
-    }
-  ?>
+  }
+?>
 </body>
 </html>
